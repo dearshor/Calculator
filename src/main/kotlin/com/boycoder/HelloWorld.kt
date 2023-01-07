@@ -18,7 +18,7 @@ fun main() {
         if (input == "exit") exitProcess(0)
 
         val inputList = input.split(" ")
-        val result = caculate(inputList)
+        val result = calculate(inputList)
 
         if (result == null) {
             println("incorrect input")
@@ -29,7 +29,7 @@ fun main() {
     }
 }
 
-private fun caculate(inputList: List<String>): Int? {
+private fun calculate(inputList: List<String>): Int? {
     if (inputList.size != 3) return null
 
     val left = inputList[0].toInt()
